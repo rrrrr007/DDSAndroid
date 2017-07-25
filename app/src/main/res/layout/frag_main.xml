@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diucity.newsoulrecycler.biz.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:src="@mipmap/logo_01" />
+
+    <TextView
+        android:id="@+id/tv_main_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_main_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:gravity="center"
+        android:text="【SCAN】\n采集数据"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_main_f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28px"
+        android:gravity="center"
+        android:text="【F1】\n查看本机数据"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tv_main_f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_f1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28px"
+        android:gravity="center"
+        android:text="【F2】\n上传本机数据"
+        android:textColor="@color/black" />
+</RelativeLayout>

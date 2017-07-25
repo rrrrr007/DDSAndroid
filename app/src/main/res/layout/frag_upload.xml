@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_upload_number"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="待上传数据0条"
+        android:textColor="@color/white" />
+
+    <com.diucity.newsoulrecycler.widget.CirclePercentView
+        android:id="@+id/cpv_upload"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

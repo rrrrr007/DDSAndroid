@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    tools:context="com.diucity.newsoulrecycler.biz.activity.CountActivity">
+
+    <TextView
+        android:id="@+id/tv_count_kinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="60px"
+        android:text="选择垃圾类型"
+        android:textColor="@color/black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/rv_count_kinds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_count_kinds" />
+
+    <TextView
+        android:id="@+id/tv_count_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_count_kinds"
+        android:layout_marginBottom="32px"
+        android:layout_marginTop="60px"
+        android:text="积分录入"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_count_score"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="输入此用户获得积分"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grayText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_marginTop="20px"
+        android:layout_below="@id/et_count"
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <TextView
+        android:id="@+id/tv_count_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_count"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/et_count"
+        android:text="清空"
+        android:textColor="@color/green" />
+</RelativeLayout>
